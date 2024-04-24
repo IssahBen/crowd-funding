@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer> </script>
+</head>
+
+<body>
+    <div class="h-screen w-screen flex flex-col  bg-white relative  ">
+        <div id="modalOverlay" class="modal-overlay"></div>
+
+        <div
+            class="bg-[url('../images/image-hero-mobile.jpg')] md:bg-[url('../images/image-hero-desktop.jpg')] w-full bg-no-repeat h-screen">
+            <nav class="px-5 pt-10 relative items-center flex justify-between w-full">
+                <img src="images/logo.svg" alt="" class="ml-2 bg-cover">
+                <div class="md:flex   hidden justify-evenly w-3/5">
+                    <p
+                        class=" hover:cursor-pointer   hover:translate-y-[-6px] duration-500 font-sans font-semibold text-xl text-white">
+                        About
+                    </p>
+                    <p
+                        class=" hover:cursor-pointer  hover:translate-y-[-6px] duration-500 font-sans font-semibold text-xl text-white">
+                        Discover
+                    </p>
+                    <p
+                        class="  hover:cursor-pointer hover:translate-y-[-6px] duration-500 font-sans font-semibold text-xl text-white">
+                        Get Started
+                    </p>
+                </div>
+                <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+                <div id="menu"
+                    class="fixed bg-gray-700 inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-black uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue">
+                    <div class="w-full py-3 text-center">
+                        <a href="#features" class="block hover:text-softRed">Features</a>
+                    </div>
+                    <div class="w-full py-3 text-center">
+                        <a href="#download" class="block hover:text-softRed">Download</a>
+                    </div>
+                    <div class="w-full py-3 text-center">
+                        <a href="#faq" class="block hover:text-softRed">FAQ</a>
+                    </div>
+                    <div class="w-full py-3 text-center">
+                        <a href="#" class="block hover:text-softRed">Login</a>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+        <div class="relative top-[-380px]">
+            <div class="flex flex-col w-full bg-white absolute  items-center ">
+                <div class="relative  w-10/12 top-[-70px] border-t-1 rounded-xl bg-white">
+                    <div class="rounded-2xl border shadow-2xl ">
+                        <div class="flex flex-row justify-center w-full relative ">
+                            <img src="images/logo-mastercraft.svg" alt="" class="absolute top-[-40px]">
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <h1 class=" mb-5  mt-14 px-8 font-sans font-extrabold text-4xl text-center">Mastercraft
+                                Bamboo
+                                Monitor
+                                Riser
+                            </h1>
+                            <p class=" mb-8 px-10 text-dark_gray text-lg text-center">A beautifully handcrafted monitor
+                                stand to
+                                reduce
+                                neck and eye
+                                strain
+                            </p>
+                            <div class="flex md:justify-between w-full px-8  md:space-x-0 space-x-4 items-center mb-10">
+                                <button
+                                    class="px-14 py-4 rounded-[32px] bg-moderate_cyan   text-xl  text-white font-bold">Back
+                                    this
+                                    project</button>
+                                <img src="images/icon-bookmark.svg" alt="" class="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end of first item -->
+                <div class="  mt-10 relative w-10/12 top-[-70px] border-t-1 rounded-xl bg-white">
+                    <div class="rounded-2xl border shadow-2xl ">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full mt-10 md:px-5">
+                            <div class="flex flex-col  w-full items-center space-y-5">
+                                <h1 class="font-extrabold text-4xl ">$89,914</h1>
+                                <p class="text-dark_gray text-lg text-center">of $100,000 backed</p>
+                            </div>
+                            <div class="flex w-full mt-5 mb-5 justify-center">
+                                <div class=" md:hidden border-t-2  border-gray-400 w-32"></div>
+                                <div class=" hidden md:block h-8 w-px bg-gray-300 mx-4"></div>
+                            </div>
+                            <div class="flex flex-col  w-full items-center space-y-5">
+                                <h1 class="font-extrabold text-4xl ">5,007</h1>
+                                <p class="text-dark_gray text-lg">total backers</p>
+                            </div>
+                            <div class="flex w-full mt-5 mb-5 justify-center">
+                                <div class=" md:hidden border-t-2  border-gray-400 w-32"></div>
+                                <div class=" hidden md:block h-8 w-px bg-gray-300 mx-4"></div>
+                            </div>
+                            <div class="flex flex-col  w-full items-center space-y-5">
+                                <h1 class="font-extrabold text-4xl ">56</h1>
+                                <p class="text-dark_gray text-lg">days left</p>
+                            </div>
+                            <div class=" md:hidden flex  mt-5 mb-10 justify-center">
+                                <div class="flex bg-gray-400 rounded-lg">
+                                    <div class=" bg-dark_cyan rounded-lg py-2 border-gray-400 w-52"></div>
+                                    <div class="rounded-lg bg-gray-400 py-2 border-gray-400 w-24"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class=" hidden md:block   mt-5 mb-10 justify-center px-6">
+                            <div class="flex bg-gray-400 rounded-lg">
+                                <div class=" bg-dark_cyan rounded-lg py-2 border-gray-400 w-96"></div>
+                                <div class="rounded-lg bg-gray-400 py-2 border-gray-400 w-24"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end of second item -->
+                <div class="  mt-10 relative w-10/12 top-[-70px] border-t-1 rounded-xl bg-white">
+                    <div class="rounded-2xl border shadow-2xl px-6 ">
+                        <div class="flex flex-col mx-5 mt-6 w-full space-y-6">
+                            <h1 class="font-sans text-xl font-bold">About this project</h1>
+                            <p class="pr-6 text-dark_gray tracking-wide">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+                                et sequi, similique eaque incidunt vitae sunt ea ipsa id soluta, error quasi. Laboriosam
+                                quas voluptas assumenda totam corporis?
+                            </p>
+                            <p class="pr-6 text-dark_gray tracking-wide">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                            </p>
+                        </div>
+                        <!-- reward-1 -->
+                        <div class=" mb-10 mt-8   border  px-5 rounded-xl shadow-2xl w-full">
+                            <div class="flex justify-between items-center  mb-5 mt-8">
+                                <h1 class="font-extrabold font-sans  text-lg">Bamboo Stand </h1>
+                                <h1 class=" pr-4 font-bold font-sans  text-dark_cyan">Pledge $25 or more </h1>
+                            </div>
+                            <p class=" mb-5 pr-6 text-dark_gray tracking-wide">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                            </p>
+                            <div class=" mb-5 flex flex-col md:flex-row md:justify-between md:space-y-0 space-y-5">
+                                <div class="flex space-x-2 items-center">
+                                    <h1 class="font-extrabold text-2xl font-sans">101</h1>
+                                    <p class="text-dark_gray">left</p>
+                                </div>
+                                <button
+                                    class="   hover:translate-y-[-6px] duration-500 select-reward px-1 py-3 w-52 rounded-3xl bg-moderate_cyan text-white font-bold text-xl">Select
+                                    Reward</button>
+                            </div>
+                        </div>
+                        <!-- end of reward 1 -->
+                        <div class=" mb-10 mt-8   border  px-5 rounded-xl shadow-2xl w-full">
+                            <div class="flex justify-between items-center  mb-5 mt-8">
+                                <h1 class="font-extrabold font-sans  text-lg">Black Edition Stand </h1>
+                                <h1 class=" pr-4 font-bold font-sans  text-dark_cyan">Pledge $75 or more </h1>
+                            </div>
+                            <p class="mb-5 pr-6 text-dark_gray tracking-wide">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                            </p>
+                            <div class=" mb-5 flex flex-col md:flex-row md:justify-between md:space-y-0 space-y-5">
+                                <div class="flex space-x-2 items-center">
+                                    <h1 class="font-extrabold text-2xl font-sans">64</h1>
+                                    <p class="text-dark_gray">left</p>
+                                </div>
+                                <button
+                                    class=" hover:translate-y-[-6px] duration-500 select-reward px-1 py-3 w-52 rounded-3xl bg-moderate_cyan text-white font-bold text-xl">Select
+                                    Reward</button>
+                            </div>
+                        </div>
+                        <!-- end of reward 2 -->
+                        <div class=" mb-10 mt-8   border  px-5 rounded-xl shadow-2xl w-full opacity-40">
+                            <div class="flex justify-between items-center  mb-5 mt-8">
+                                <h1 class="font-extrabold font-sans  text-lg">Mahogany Special Edition </h1>
+                                <h1 class=" pr-4 font-bold font-sans  text-dark_cyan">Pledge $200 or more </h1>
+                            </div>
+                            <p class="mb-5 pr-6 text-dark_gray tracking-wide">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                            </p>
+                            <div class=" mb-5 flex flex-col md:flex-row md:justify-between md:space-y-0 space-y-5">
+                                <div class="flex space-x-2 items-center">
+                                    <h1 class="font-extrabold text-2xl font-sans">0</h1>
+                                    <p class="text-dark_gray">left</p>
+                                </div>
+                                <button
+                                    class="px-1 py-3 w-52 rounded-3xl bg-moderate_cyan text-white font-bold text-xl">out
+                                    of
+                                    stock</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- stuff -->
+        </div>
+        <!-- modal -->
+        <div id="modal"
+            class="   opacity-100 mx-auto  hidden mt-10 fixed z-10 left-0 right-0  w-10/12 h-full overflow-auto top-20 border-t-1 rounded-xl bg-white">
+            <div class="rounded-2xl relative  border shadow-2xl px-6 ">
+                <img src="images/icon-close-modal.svg" alt="" class=" hover:cursor-pointer absolute top-5 right-10"
+                    id="mclose">
+                <div class="flex flex-col mx-5 mt-6 w-full space-y-6">
+                    <h1 class="font-sans text-xl font-bold">Back this project</h1>
+
+                    <p class="pr-6 text-dark_gray tracking-wide">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                    </p>
+                </div>
+                <!-- reward-1 -->
+                <div class=" mb-10 mt-8   border  px-5 rounded-xl shadow-2xl w-full">
+                    <div class="flex  items-center  mb-5 mt-8 space-x-2">
+                        <input class="checked:bg-green-600" type="radio" id="noreward" name="drone" value="huey" />
+                        <h1 class=" pr-4 font-bold font-sans  ">Pledge with no reward </h1>
+                    </div>
+                    <p class=" mb-5 pr-6 text-dark_gray tracking-wide">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                    </p>
+                    <div id="pledge2" class=" hidden  w-full flex flex-col mb-10">
+                        <div class="w-full border-t-2 border-gray-400 mb-5"></div>
+                        <div class="flex md:flex-row flex-col space-y-2  md:space-y-0 md:justify-between ">
+                            <div class="flex justify-center items-center">
+                                <p class="font-bold text-dark_gray">Enter Pledge</p>
+                            </div>
+                            <div class="flex  space-x-2 justify-between">
+                                <input type="text" class=" border  w-1/3 rounded-3xl" placeholder="$">
+                                <button
+                                    class="px-1 py-3 w-52 rounded-3xl bg-moderate_cyan text-white font-bold text-xl">Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of reward 1 -->
+                <div class=" mb-10 mt-8   border  px-5 rounded-xl shadow-2xl w-full">
+                    <div class="flex space-x-2 items-center  mb-5 mt-8">
+                        <input class="checked:bg-green-600" type="radio" id="black" name="drone" value="huey" />
+                        <div class="flex flex-row justify-between w-full">
+                            <div class="flex flex-col">
+                                <h1 class="font-extrabold font-sans  text-lg">Black Edition Stand </h1>
+                                <h1 class=" pr-4 font-bold font-sans  text-dark_cyan">Pledge $75 or more </h1>
+                            </div>
+                            <div class=" hidden md:flex space-x-2 items-center">
+                                <h1 class="font-extrabold text-2xl font-sans">64</h1>
+                                <p class="text-dark_gray">left</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-5 pr-6 text-dark_gray tracking-wide">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                    </p>
+                    <div class=" mb-5 flex flex-col   md:space-y-0 space-y-5">
+                        <div class=" md:hidden flex space-x-2 items-center">
+                            <h1 class="font-extrabold text-2xl font-sans">64</h1>
+                            <p class="text-dark_gray">left</p>
+                        </div>
+                        <div id="pledge" class=" hidden w-full flex flex-col">
+                            <div class="w-full border-t-2 border-gray-400 mb-5"></div>
+                            <div class="flex md:flex-row flex-col space-y-2  md:space-y-0 md:justify-between ">
+                                <div class="flex justify-center items-center">
+                                    <p class="font-bold text-dark_gray">Enter Pledge</p>
+                                </div>
+                                <div class="flex  space-x-2 justify-between">
+                                    <input id="pledgeamount" type="text" class=" border  w-1/3 rounded-3xl"
+                                        placeholder="$">
+                                    <button id="continue"
+                                        class="px-1 py-3 w-52 rounded-3xl bg-moderate_cyan text-white font-bold text-xl">Continue
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of reward 2 -->
+            <div class=" mb-10 mt-8   border  px-5 rounded-xl shadow-2xl w-full opacity-40">
+                <div class="flex space-x-2 items-center  mb-5 mt-8">
+                    <input class="checked:bg-green-600" type="radio" id="black" name="drone" value="huey" />
+                    <div class="flex flex-col">
+                        <h1 class="font-extrabold font-sans  text-lg">Mahogany Special Edition </h1>
+                        <h1 class=" pr-4 font-bold font-sans  text-dark_cyan">Pledge $200 or more </h1>
+                    </div>
+                </div>
+                <p class="mb-5 pr-6 text-dark_gray tracking-wide">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                </p>
+                <div class=" mb-5 flex flex-col md:flex-row md:justify-between md:space-y-0 space-y-5">
+                    <div class="flex space-x-2 items-center">
+                        <h1 class="font-extrabold text-2xl font-sans">0</h1>
+                        <p class="text-dark_gray">left</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- modal ended  -->
+        <div id="modal2"
+            class="   opacity-100 mx-auto  hidden mt-10 fixed z-10 left-0 right-0  w-10/12 md:h-3/5 h-2/3 overflow-auto top-20 border-t-1 rounded-xl bg-white">
+            <div class="rounded-2xl relative    h-full flex flex-col items-center border shadow-2xl px-6 ">
+                <img src="images/icon-check.svg" alt="" class="mt-10 ">
+                <div class="flex flex-col mx-5 mt-6 w-full items-center space-y-6 ">
+                    <h1 class="font-sans text-xl font-bold">Thank you for your support!</h1>
+
+                    <p class="mx-auto pr-6 text-dark_gray tracking-wide">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laboriosam laborum
+
+                    </p>
+
+                </div>
+                <button id="got"
+                    class=" mb-10 mt-5 px-1 py-3 w-44 rounded-3xl bg-dark_cyan text-white font-bold text-xl">Got it
+                </button>
+
+
+                <!-- reward-1 -->
+
+                <!-- end of reward 1 -->
+
+                <!-- end of reward 2 -->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
